@@ -10,9 +10,9 @@ The project focuses on understanding how language models evolve from simple freq
 
 A language model estimates the probability of the next token given the previous context:
 
-\[
+$$
 P(x_t \mid x_1, x_2, \ldots, x_{t-1})
-\]
+$$
 
 This project demonstrates several approaches to autoregressive language modeling:
 
