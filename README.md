@@ -86,5 +86,7 @@ Possible extensions include:
 - More systematic hyperparameter experiments
 
 ---
+## About
+
 This project was developed as an educational exploration of language modeling and neural text generation using PyTorch.
----
+
