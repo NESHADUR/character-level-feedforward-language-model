@@ -1,6 +1,6 @@
 # Text Generation with Language Models
 
-**N-grams and feedforward networks written from first principles, then recurrent networks in PyTorch — trained on six public-domain novels and used to generate text.**
+**From unigrams to GRUs: building autoregressive language models from the counts up.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
