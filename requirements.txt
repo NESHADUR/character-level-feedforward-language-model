@@ -1,0 +1,12 @@
+# Runtime dependencies for the notebooks.
+#
+# Install with:   pip install -r requirements.txt
+# Or use the conda environment:   conda env create -f environment.yml
+#
+# Versions below are the lower bounds the notebooks were last run against.
+# A lockfile with exact pins is not committed, so the repository stays
+# reproducible across the long tail of PyTorch releases.
+
+torch>=2.0
+matplotlib>=3.7
+numpy>=1.24
