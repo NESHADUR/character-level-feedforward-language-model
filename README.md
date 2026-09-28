@@ -293,11 +293,11 @@ Then rename each file to the title the notebooks expect.
 ## Citation
 
 ```bibtex
-@software{ngram_to_recurrent_language_models,
+@software{statistical_to_neural_language_models,
   author  = {NESHADUR},
-  title   = {From N-Grams to Recurrent Networks: Language Models Built From Scratch},
+  title   = {Text Generation with Language Models: From Statistical Counts to Neural Networks},
   year    = {2026},
-  url     = {https://github.com/NESHADUR/ngram-to-recurrent-language-models},
+  url     = {https://github.com/NESHADUR/statistical-to-neural-language-models},
   license = {MIT}
 }
 ```
