@@ -4,9 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-An exploration of autoregressive language modeling, progressing from classical
-word-level n-gram language models to character-level neural language models —
-feedforward, recurrent, LSTM and GRU — implemented with PyTorch.
+An exploration of autoregressive language modeling, progressing from classical word-level n-gram language models to character-level neural language models: feedforward, RNN, LSTM, and GRU, all implemented with PyTorch.
 
 The project focuses on understanding how language models evolve from simple
 frequency-based statistical models to neural models that learn distributed
@@ -129,16 +127,16 @@ model it just trained, and the next one opens with that failure.
 
 **Word-level, count-based, no neural networks at all.**
 
-1. **Autoregressive formulation** — the chain rule, and what "context" means.
-2. **The Markov assumption** — why truncating history to *n−1* tokens is a choice,
+1. **Autoregressive formulation:** the chain rule, and what "context" means.
+2. **The Markov assumption:** why truncating history to *n−1* tokens is a choice,
    and what it costs.
-3. **Evaluation** — log-likelihood, per-word log-likelihood, and perplexity,
+3. **Evaluation:** log-likelihood, per-word log-likelihood, and perplexity,
    derived from each other, with a worked numerical example.
-4. **Unigram → Bigram → Trigram → N-gram** — each built twice: from scratch with
+4. **Unigram → Bigram → Trigram → N-gram:** each built twice: from scratch with
    `Counter` so the count ratios are visible, then as a learnable PyTorch model
    trained by gradient descent, so it is visible that the learned distribution
    converges to the counted one.
-5. **The bridge** — why a trigram assigns exactly zero to a sensible sentence,
+5. **The bridge:** why a trigram assigns exactly zero to a sensible sentence,
    and why learned embeddings are the answer.
 
 ### [`Neural Network-based Language Models.ipynb`](Neural%20Network-based%20Language%20Models.ipynb)
@@ -266,12 +264,7 @@ Six Project Gutenberg novels, public domain in the United States.
 | `Alice's Adventures in Wonderland.txt`  | Lewis Carroll      | 163,950       | 144,604       |
 | **Total**                               |                    | **4,283,285** | **4,186,205** |
 
-**Raw** is what the feedforward section uses — it keeps the Gutenberg licence
-header and footer, which is why its vocabulary is 120 characters rather than 114
-(the footer contributes `™`, `‎`, `‏`, `•`). **Cleaned** strips everything
-between the `*** START OF` and `*** END OF` markers, and is what the RNN, LSTM and
-GRU sections use. The two halves of the notebook therefore model slightly
-different data — see [issue 6](#6--the-two-halves-preprocess-the-corpus-differently).
+The feedforward section uses the raw text, which keeps the Gutenberg licence header and footer. That is why its vocabulary is 120 characters rather than 114; the footer contributes ™, ‎, ‏, and •. The cleaned column strips everything between the *** START OF and *** END OF markers, and is what the RNN, LSTM, and GRU sections use. The two halves of the notebook therefore model slightly different data.
 
 To move the books into a `data/` directory, change one line per notebook:
 
